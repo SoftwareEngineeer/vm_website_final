@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vision Mentors</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-dyB6Y1IDu6HE+U6LlCwOdZT1M7gTL1QeJ7JppKo/7D94Ro+PzQ0MLnDcbw9eyX9V" crossorigin="anonymous">
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<style>
+		.about_h1l {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		  }
+		  
+/* Container for portrait and landscape images */
+.portrait-image {
+    perspective: 1000px; /* Adds depth */
+    display: inline-block;
+  }
+
+  .portrait-image img {
+    width: 110%; /* Reduce the size of the image */
+    max-width: 500px; /* Optional: Set a max width to prevent it from getting too large */
+    height: 500; /* Maintain aspect ratio */
+    border-radius: 15px; /* Optional for rounded corners */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+	margin-left: 120px; /* Move the image a little bit to the right */
+  }
+
+  .portrait-image:hover img {
+    transform: rotateY(10deg) rotateX(10deg); /* 3D rotation on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+
+  
+  .position-relative {
+	position: relative;
+	overflow: hidden; /* Prevent content overflow */
+  }
+  
+  /* Ensure proper spacing and alignment */
+  .about_h1 {
+	margin-bottom: 50px; /* Add spacing to avoid overlapping sections */
+  }
+  .event_1ril img {
+    width: 100%;
+    height: auto; /* Ensures aspect ratio is maintained */
+    object-fit: cover; /* Makes sure the image covers the container without distortion */
+    border-radius: 8px; /* Adds a slight round corner to match the design */
+}
+#footer .footer_m {
+	background-image: url('img/footer.png'); /* Replace with the actual path to your image */
+	background-size: cover; /* Ensures the image covers the entire footer */
+	background-position: center; /* Centers the image */
+	background-repeat: no-repeat; /* Prevents the image from repeating */
+	color: #fff; /* Adjusts text color to ensure readability */
+	padding: 3rem 0; /* Ensures proper spacing */
+  }
+		  
+	</style>
+
+</head>
+<body>
+
+	<section id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg_light p-0" id="navbar_sticky">
+		  <div class="container-xl d-flex align-items-center">
+			<!-- Logo section -->
+			<a class="col_brown" href="index.html">
+				<img src="img/logo.png" alt="Vision Mentors Logo" style="max-height: 90px; border: 1px;">
+			</a>
+	  
+			<!-- Navbar toggler button for mobile view -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+	  
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="navbarContent">
+			  <ul class="navbar-nav mx-auto"> <!-- mx-auto centers the items -->
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="course.html">Courses</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="team.html">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="event.html">Calendar</a>
+				  </li>
+				  
+				  <li class="nav-item">
+					<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </section>
+
+	  <section id="center" class="center_h">
+		<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-inner">
+			
+			<!-- Slide 1 -->
+			<div class="carousel-item active">
+			  <div class="slide-content" style="background-image: url('img/1.avif');">
+				<div class="overlay"></div>
+				<div class="carousel-caption">
+				  <h2 class="text-white">MOTIVATE AND <br> ELEVATE</h2>
+				  <p class="mt-3 text-light">At Vision Mentors, we inspire curiosity and empower students to unlock their full potential...</p>
+				  <h6 class="mb-0 mt-4"><a class="button" href="about.html">Learn More</a></h6>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- Slide 2 -->
+			<div class="carousel-item">
+			  <div class="slide-content" style="background-image: url('img/bg_2.jpg');">
+				<div class="overlay"></div>
+				<div class="carousel-caption">
+				  <h2 class="text-white">ACHIEVE YOUR GOALS</h2>
+				  <p class="mt-3 text-light">Our mission is to equip students with the skills needed to succeed academically and beyond...</p>
+				  <h6 class="mb-0 mt-4"><a class="button" href="about.html">Learn More</a></h6>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- Slide 3 -->
+			<div class="carousel-item">
+			  <div class="slide-content" style="background-image: url('img/bg_3.jpg');">
+				<div class="overlay"></div>
+				<div class="carousel-caption">
+				  <h2 class="text-white">EMPOWERED LEARNING</h2>
+				  <p class="mt-3 text-light">With personalized guidance, we drive lifelong growth and success...</p>
+				  <h6 class="mb-0 mt-4"><a class="button" href="about.html">Learn More</a></h6>
+				</div>
+			  </div>
+			</div>
+			
+		  </div>
+		  
+		  <!-- Carousel Controls -->
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	  </section>
+	  
+
+<section id="spec" class="p_3 bg_brown">
+ <div class="container-xl">
+   <div class="row spec_1">
+    <div class="col-md-4">
+	 <div class="spec_1i">
+	  <h5 class="text-white fw-normal mb-0"><i class="fa fa-user me-2 font_60 lh-1 align-middle"></i> Personalized Roadmaps</h5>
+	 </div>
+	</div>
+	<div class="col-md-4">
+	 <div class="spec_1i">
+	  <h5 class="text-white fw-normal mb-0"><i class="fa fa-book me-2 font_60 lh-1 align-middle"></i> 1 : 1 Career Coaching</h5>
+	 </div>
+	</div>
+	<div class="col-md-4">
+	 <div class="spec_1i">
+	  <h5 class="text-white fw-normal mb-0"><i class="fa fa-trophy me-2 font_60 lh-1 align-middle"></i> Reach Target Goals </h5>
+	 </div>
+	</div>
+   </div>
+ </div>
+</section>
+
+<section id="course" class="p_3">
+ <div class="container-xl">
+   <div class="row course_1">
+     <div class="col-md-9">
+	  <div class="course_1l">
+	   <h3 class="mb-0">Our Popular Courses</h3>
+	  </div>
+	 </div>
+	 <div class="col-md-3">
+	  <div class="course_1r text-end">
+	    <h6 class="mb-0"><a class="button" href="course.html">All Courses</a></h6>
+	  </div>
+	 </div>
+   </div>
+   <div class="row course_2 mt-4">
+    <div class="col-md-12">
+	 <ul class="nav nav-tabs mb-0">
+   
+    <li class="nav-item d-inline-block me-2">
+        <a href="#" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+            <span class="d-md-block">Courses</span>
+        </a>
+    </li>
+	<li class="nav-item d-inline-block me-2">
+        <a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+            <span class="d-md-block">Events</span>
+        </a>
+    </li>
+</ul>
+	</div>
+   </div>
+   <div class="row course_3 mt-4">
+     <div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="course_3i row">
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/testpre.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> Middle/High - Academic Support</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">Mentorship</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 5-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/web_d.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			  <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+		      <h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#">Computer Science</a></h6>
+		   </div>
+		   </div>
+		   <div class="course_3im2 p-3 shadow_box">
+		
+			<h5 class="mt-3 mb-3"><a href="#">Web Development</a></h5>
+		    <h6> Offline/Online</h6>
+			<hr>
+			<h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 9-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+		   </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/ib.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> SAT/TOEFL</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">SAT, SSAT, ACT, TOEFL, IELTS</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		</div>
+		<div class="course_3i row mt-4">
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/csprogram.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#">High - Test Prep</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">IGCSE/IB/AP</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 9-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/kidcs.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#">MYP</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">Middle Years Program</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/economic.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#">MYP</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">Research</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		</div>
+    </div>
+    <div class="tab-pane" id="profile">
+         <div class="course_3i row">
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/5.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> SAT/TOEFL</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">SAT, SSAT, ACT, TOEFL, IELTS</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/6.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> SAT/TOEFL</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">SAT, SSAT, ACT, TOEFL, IELTS</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/7.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> SAT/TOEFL</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="#">SAT, SSAT, ACT, TOEFL, IELTS</a></h5>
+			  <h6> Offline/Online</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> Grades 8-12 <i class="fa fa-book col_brown me-1 ms-2"></i> 15-20 lessons </h6>
+			 </div>
+		  </div>
+		 </div>
+		</div>
+    </div>
+	
+	<div class="tab-pane" id="profile1">
+         <div class="course_3i row">
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/2.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> EVENT</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="spring_seminar.html">WHAT'S IN VISION MENTORS' FREE SEMINAR?</a></h5>
+			  <h6>13 Nov, 2024</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> 10:00 AM - 13:00 PM</h6>
+			 </div>
+		  </div>
+		 </div>
+		 <div class="col-md-4">
+		  <div class="course_3im clearfix">
+		   <div class="course_3im1 position-relative clearfix">
+		     <div class="course_3im1i clearfix">
+		       <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/3.jpg" class="w-100" alt="abc"></a>
+				  </figure>
+			  </div>
+		     </div>
+			 <div class="course_3im1i1 position-absolute w-100 top-0 clearfix p-3">
+				<h6 class="mb-0"><a class="bg_brown d-inline-block px-3 pt-2 pb-2 text-white font_14 rounded-3" href="#"> EVENT</a></h6>
+			 </div>
+			 </div>
+			 <div class="course_3im2 p-3 shadow_box">
+		  
+			  <h5 class="mt-3 mb-3"><a href="india_tech.html">Unleash Your Inner Tech Entrepreneur with Vision Mentors now !!! 🚀</a></h5>
+			  <h6>13 Nov, 2024</h6>
+			  <hr>
+			  <h6 class="font_14 fw-bold mb-0"><i class="fa fa-user col_brown me-1"></i> 10:00 AM - 12:00 PM </h6>
+			 </div>
+		  </div>
+		 </div>
+		 
+		 </div>
+		</div>
+    </div>
+	
+	
+    
+</div>
+   </div>
+ </div>
+</section>
+
+<section id="learn" class="pt-5 pb-5 bg_light">
+	<div class="container-xl">
+	  <!-- Academic Roadmap Section -->
+	  <div class="learn_1 row text-center mb-4">
+		<h3 class="mb-0">Academic Roadmap</h3>
+	  </div>
+	  <div class="learn_2 row align-items-center">
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg_dark px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white"><i class="fa fa-book"></i></span>
+			<h6 class="mb-0 mt-3 text-white">Phonics</h6>
+			<span class="arrow"><i class="fas fa-arrow-right"></i></span>
+		  </div>
+		</div>
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg-info px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white"><i class="fa fa-language"></i></span>
+			<h6 class="mb-0 mt-3 text-white">English Exploration</h6>
+			<span class="arrow"><i class="fas fa-arrow-right"></i></span>
+
+		  </div>
+		</div>
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg-warning px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white"><i class="fa fa-university"></i></span>
+			<h6 class="mb-0 mt-3 text-white">Middle Years Program</h6>
+			<span class="arrow"><i class="fas fa-arrow-right"></i></span>
+
+		  </div>
+		</div>
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg-success px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white"><i class="fa fa-users"></i></span>
+			<h6 class="mb-0 mt-3 text-white">Mentorship</h6>
+			<span class="arrow"><i class="fas fa-arrow-right"></i></span>
+
+		  </div>
+		</div>
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg-secondary px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white">
+				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+					<path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2L3 10.207V11h.793L13 2.793 11.207 2zm1.586 1.586L13 3.207 4.207 12H4v-.207L12.793 3.793zM3.5 10.5L4 11l-1.5 3.5L6 12.5l-.5-.5-2 2z"/>
+				</svg>
+			</span>			
+			
+			<h6 class="mb-0 mt-3 text-white">Test Preparation</h6>
+			<span class="arrow"><i class="fas fa-arrow-right"></i></span>
+
+		  </div>
+		</div>
+		<div class="col-md-2 col-sm-6">
+		  <div class="learn_2i bg-danger px-3 pt-4 pb-4 rounded-3 text-center position-relative">
+			<span class="lh-1 font_60 text-white"><i class="fa fa-graduation-cap"></i></span>
+			<h6 class="mb-0 mt-3 text-white">College Admissions</h6>
+		  </div>
+		</div>
+	  </div>
+	  <div class="learn_3 row text-center mt-4">
+		<h6 class="mb-0"><a class="button_1" href="course.html">View All Categories</a></h6>
+	  </div>
+	</div>
+  </section>
+  
+  
+
+  <section id="about_h" class="p_3">
+	<div class="container-xl">
+	  <div class="about_h1 row">
+		<div class="col-md-6 position-relative">
+		  <!-- Portrait Image -->
+		  <div class="portrait-image">
+			<img src="img/portrait.jpg" alt="Portrait Image" class="rounded-3">
+		  </div>
+		</div>
+		<div class="col-md-6">
+		  <div class="about_h1r">
+			<h2>Higher Education Begins Here</h2>
+			<p class="mt-3 fs-5">
+			  At Vision Mentors, we believe that true commitment comes from understanding the value of quality education and being ready to invest in your future.
+			</p>
+			<p>
+			  We are dedicated to providing students with a learning experience that goes beyond the classroom, empowering them to achieve academic excellence and lifelong success.
+			</p>
+			<h6 class="fw-bold mt-4">
+			  <i class="fa fa-check-circle col_brown align-middle me-2"></i> Full Lifetime Access
+			</h6>
+			<h6 class="fw-bold mt-3">
+			  <i class="fa fa-check-circle col_brown align-middle me-2"></i> 30+ Downloadable Resources
+			</h6>
+			<h6 class="fw-bold mt-3">
+			  <i class="fa fa-check-circle col_brown align-middle me-2"></i> Certificate Of Completion
+			</h6>
+			<h6 class="mb-0 mt-4"><a class="button" href="#">Read More</a></h6>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+   
+
+  <section id="event" class="p_3 bg_dark">
+	<div class="container-xl">
+	  <div class="col-md-12">
+		<div class="event_1r">
+		  <div class="row course_1">
+			<div class="col-md-9">
+			  <div class="course_1l">
+				<h3 class="text-white">Latest Events</h3>
+				<p class="mb-0 text-light">
+				  Success isn’t really that difficult. There is a significant portion of the population
+				</p>
+			  </div>
+			</div>
+			<div class="col-md-3">
+			  <div class="course_1r text-end">
+				<h6 class="mb-0"><a class="button" href="event.html">View All</a></h6>
+			  </div>
+			</div>
+		  </div>
+  
+		  <!-- First Event: India Tech Trip -->
+		  <div class="event_1ri row bg-white p-3 mx-0 mt-4 rounded-3">
+			<div class="col-md-5 p-0">
+			  <div class="event_1ril">
+				<div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/3.jpg" class="w-100 rounded-3" alt="India Tech Trip"></a>
+				  </figure>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-7">
+			  <div class="event_1rir p-4">
+				<h5>Unleash Your Inner Tech Entrepreneur with Vision Mentors now !!! 🚀</h5>
+				<h6 class="font_14 mt-3">
+				  <i class="fa fa-calendar col_brown me-1"></i> 3 Nov, 2022
+				  <i class="fa fa-clock-o col_brown me-1 ms-3"></i> 10:00 AM - 13:00 PM
+				</h6>
+				<p class="font_14 mt-3">
+				  Calling all tech-savvy high school innovators! Are you ready to turn your passion for computer science and entrepreneurship into an unforgettable adventure?
+				</p>
+				<a class="button mt-3" href="india_tech.html">Join Event</a>
+			  </div>
+			</div>
+		  </div>
+  
+		  <!-- Second Event: Winter & Spring Seminar -->
+		  <div class="event_1ri row bg-white p-3 mx-0 mt-4 rounded-3">
+			<div class="col-md-5 p-0">
+			  <div class="event_1ril">
+				<div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="img/2.jpg" class="w-100 rounded-3" alt="Winter & Spring Seminar"></a>
+				  </figure>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-7">
+			  <div class="event_1rir p-4">
+				<h5>WHAT'S IN VISION MENTORS' FREE SEMINAR?</h5>
+				<h6 class="font_14 mt-3">
+				  <i class="fa fa-calendar col_brown me-1"></i> 13 Nov, 2024
+				  <i class="fa fa-clock-o col_brown me-1 ms-3"></i> 10:00 AM - 12:00 PM
+				</h6>
+				<p class="font_14 mt-3">
+				  By attending the seminar, you will have the opportunity to:
+				  <ul>
+					<li>Learn how to set realistic and long-term learning goals.</li>
+					<li>Discover experienced teachers and diverse courses.</li>
+					<li>Receive direct consultation to identify and plan your goals.</li>
+				  </ul>
+				</p>
+				<a class="button mt-3" href="spring_seminar.html">Join Event</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  
+
+
+
+  <section id="blog_h" class="p_3">
+	<div class="container-xl">
+	   <div class="learn_1 row text-center mb-4">
+		<h3>Latest Articles</h3>
+		<p class="mb-0">Check out our latest blog posts, articles, client success stories, and essential announcements</p>
+	   </div>
+	   <div class="blog_h1 row">
+		<div class="col-md-4">
+		 <div class="blog_h1i">
+		   <div class="grid clearfix">
+					 <figure class="effect-jazz mb-0">
+					   <a href="#"><img src="img/19.jpeg" class="w-100" alt="Vision Mentor Programs"></a>
+					 </figure>
+				 </div>
+		   <h5 class="mt-3"><a href="#">The impact of mentorship programs on student success</a></h5>
+		   <h6 class="font_14 mt-3"><i class="fa fa-calendar col_brown me-1"></i> 15 Nov, 2024
+	<i class="fa fa-clock-o col_brown me-1 ms-3"></i> 09:00 AM - 12:00 PM</h6>
+		   <p class="mt-3">Explore how personalized mentorship programs at Vision Mentors help students achieve their academic and career goals, ensuring their success in competitive environments.</p>
+		   <h6 class="mb-0 mt-3"><a class="button" href="#">Read More</a></h6>
+		 </div>
+		</div>
+		<div class="col-md-4">
+		 <div class="blog_h1i">
+		   <div class="grid clearfix">
+					 <figure class="effect-jazz mb-0">
+					   <a href="#"><img src="img/20.jpeg" class="w-100" alt="AI in Education"></a>
+					 </figure>
+				 </div>
+		   <h5 class="mt-3"><a href="#">Integrating AI in educational mentorship</a></h5>
+		   <h6 class="font_14 mt-3"><i class="fa fa-calendar col_brown me-1"></i> 10 Nov, 2024
+	<i class="fa fa-clock-o col_brown me-1 ms-3"></i> 10:00 AM - 13:00 PM</h6>
+		   <p class="mt-3">Learn how Vision Mentors is utilizing AI technologies to create personalized learning paths for students, enhancing their learning experience and future career opportunities.</p>
+		   <h6 class="mb-0 mt-3"><a class="button" href="#">Read More</a></h6>
+		 </div>
+		</div>
+		<div class="col-md-4">
+		 <div class="blog_h1i">
+		   <div class="grid clearfix">
+					 <figure class="effect-jazz mb-0">
+					   <a href="#"><img src="img/21.jpeg" class="w-100" alt="Future Career Paths"></a>
+					 </figure>
+				 </div>
+		   <h5 class="mt-3"><a href="#">Preparing students for future career paths</a></h5>
+		   <h6 class="font_14 mt-3"><i class="fa fa-calendar col_brown me-1"></i> 12 Nov, 2024
+	<i class="fa fa-clock-o col_brown me-1 ms-3"></i> 08:00 AM - 11:00 AM</h6>
+		   <p class="mt-3">Vision Mentors' career development programs help students identify their strengths, explore career options, and align their skills with industry demands for a successful future.</p>
+		   <h6 class="mb-0 mt-3"><a class="button" href="#">Read More</a></h6>
+		 </div>
+		</div>
+	   </div>
+	   
+	</div>
+   </section>
+   
+
+
+	
+ 
+ <div class="main_2 clearfix">
+<section id="footer">
+ <div class="footer_m p_3">
+   <div class="container-xl">
+    <div class="footer_1 row">
+	 <div class="col-md-4">
+	  <div class="footer_1i">
+	    <div class="top_1l">
+			<h4 class="mb-0">
+				<a class="col_brown" href="index.html">
+					<img src="img/footer_logo.png" alt="Vision Mentors Logo" style="max-height: 90px; position: relative; top: -5px; left: 30px;">
+				</a>
+			</h4> 	  <p class="text-light mt-4">Our mission is to nurture passions, transform them into skills, and equip students with the tools to exceed academic goals.<br>
+
+				Empowering Minds, Inspiring Excellence</p>
+	  <h5 class="text-white">Follow Us</h5>
+	  <ul class="social-network social-circle mb-0 mt-4">
+					<li><a href="https://www.facebook.com/visionmentorsvn" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.linkedin.com/company/vision-mentors/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+	</div>
+	  </div>
+	 </div>
+	 <div class="col-md-2">
+	  <div class="footer_1i">
+	    <h4 class="col_brown mb-4">Category</h4>
+		   <div class="row footer_1ism">
+		 <h6 class="fw-normal col-md-12 col-6"><a class="text-light" href="#"> Economics</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Test Preparation</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> SAT/TOEFL/IELTS</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Computer Science</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> IB/AP/IGCSE</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-light" href="#"> Research Programs</a></h6>
+	    </div>
+	  </div>
+	 </div>
+	 <div class="col-md-2">
+	  <div class="footer_1i">
+	    <h4 class="col_brown mb-4">Useful Link</h4>
+		   <div class="row footer_1ism">
+		 <h6 class="fw-normal col-md-12 col-6"><a class="text-light" href="#"> Home</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> About</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Course</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Our Policy</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Pricing</a></h6>
+	 <h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-light" href="#"> Faq</a></h6>
+	    </div>
+	  </div>
+	 </div>
+	 <div class="col-md-4">
+	  <div class="footer_1i">
+	    <h4 class="col_brown mb-4">Contact Us</h4>
+		 <h6 class="mt-4 text-light"><i class="fa fa-map-marker col_brown me-2 fs-4 align-middle"></i> Shophouse A26, Sunshine City, Nam Thang Long Urban Area (Phase 2), Dong Ngac Ward, Bac Tu Liem District, Hanoi</h6>
+		 <h6 class="mt-4 text-light"><i class="fa fa-microphone col_brown me-2 fs-4 align-middle"></i> (+84) 349 279 356</h6>
+		 <h6 class="mt-4 text-light mb-0"><i class="fa fa-headphones col_brown me-2 fs-4 align-middle"></i> info@visionmentorsvn.com</h6>
+	  </div>
+	 </div>
+	</div>
+  </div>
+ </div>
+</section>
+
+<section id="footer_b" class="bg_dark">
+ <div class="container-xl">
+    <div class="footer_b1 row text-center">
+     <div class="col-md-12">
+	   <p class="mb-0 text-light">© 2024 Vision Mentors | All Rights Reserved</a></p>
+	 </div>
+	</div>
+  </div>
+</section>
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar_sticky = document.getElementById("navbar_sticky");
+var sticky = navbar_sticky.offsetTop;
+var navbar_height = document.querySelector('.navbar').offsetHeight;
+function myFunction() {
+  if (window.pageYOffset >= sticky + navbar_height) {
+    navbar_sticky.classList.add("sticky")
+	document.body.style.paddingTop = navbar_height + 'px';
+  } else {
+    navbar_sticky.classList.remove("sticky");
+	document.body.style.paddingTop = '0'
+  }
+}
+
+// Initialize carousel with custom settings
+const myCarousel = new bootstrap.Carousel('#carouselExample', {
+	interval: 5000, // Slide transition every 5 seconds
+	ride: 'carousel'
+  });
+  
+</script>
+<script src="//code.tidio.co/2zczqbui3aejpxciqjpxhblgreuonxdo.js"></script>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

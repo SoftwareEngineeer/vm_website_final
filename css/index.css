@@ -1,0 +1,494 @@
+/*********************center_home****************/
+.center_h {
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-size: 70%; /* Adjust the percentage as needed to reduce the size */
+}
+.center_hm {
+background: #0000009c;
+}
+.form-check-input:checked{
+background:#1a2844;
+border-color:#1a2844; 
+ }
+.form-check-input:checked[type=radio]{
+background-image:none; 
+ }
+.center_h1l{
+padding-top:150px; 
+ }
+.center_h1r .button_1:hover{
+background:#1a2844;
+ }
+
+ .carousel-item {
+    height: 100vh;
+}
+
+.slide-content {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.carousel-caption h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.carousel-caption .button {
+    background-color: #de8329;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+.carousel-caption .button:hover {
+    background-color: #c4711d;
+}
+
+.learn_2i .arrow {
+    position: absolute;
+    top: 50%;
+    right: -30px; /* Increase this value if the arrow is too close to the box */
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #1a2844; /* Make sure this color contrasts with the background */
+  }
+  
+  .learn_2i:last-child .arrow {
+    display: none; /* Hide the arrow for the last item */
+  }
+  
+  
+
+/*********************center_home_end****************/
+
+/*********************course****************/
+.course_2 .nav-tabs {
+border:none; 
+}
+.course_2 .nav-tabs .nav-link {
+border-radius: 5px;
+border:1px solid #fff;
+color: #1a2844;
+background:#fdfafb; 
+margin: 0 5px 0px 0px;
+padding: 12px 20px;
+font-weight:bold;
+}
+.course_2 .nav-tabs .nav-link:hover {
+color: #fff;
+background: rgb(198, 96, 13);
+border:1px solid rgb(198, 96, 13);
+}
+.course_2 .nav-tabs .nav-link.active {
+border:1px solid rgb(198, 96, 13);
+color: #fff;
+background: rgb(198, 96, 13);
+}
+/*********************course_end****************/
+
+/*********************learn****************/
+.learn_2i{
+opacity:0.9; 
+cursor:pointer;
+ }
+.learn_2i:hover{
+opacity:1; 
+ }
+.about_h1l2{
+bottom:-70px; 
+ }
+.about_h2{
+margin-top:80px; 
+ }
+
+/*********************learn_end****************/
+
+/*********************event****************/
+.event_1li{
+border-radius:5px 5px 0px 0px; 
+ }
+.event_1li1{
+border-radius:0px 0px 5px 5px; 
+ }
+.event_1r .course_1r .button:hover{
+background:rgb(198, 96, 13); 
+ }
+/*********************event_end****************/
+
+/*********************prize****************/
+.prize_1l{
+padding:80px 100px; 
+ }
+.prize_1lil span{
+width:120px;
+height:120px;
+line-height:120px; 
+ }
+/*********************prize_end****************/
+
+
+@media screen and (max-width : 767px){
+.center_hm {
+padding-top:20px!important;
+padding-bottom:20px!important; 
+ }
+.center_hm br{
+display:none;
+ }
+.center_h1l{
+padding-top:0;
+text-align:center;
+margin-bottom:15px;
+ }
+.center_h1l p{
+text-align:left;
+ }
+.center_h1l h2{
+font-size:22px;
+ }
+.center_h1r h3{
+font-size:22px;
+text-align:center; 
+ }
+.center_h1r .button_1{
+display:block;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+text-align:center; 
+ }
+.spec_1i{
+margin-top:8px;
+margin-bottom:8px; 
+ }
+.course_1r {
+text-align:center!important;
+margin-top:15px; 
+ }
+.course_1l {
+text-align:center;
+ }
+.course_2 .nav-tabs .nav-link{
+margin-top:5px;
+margin-bottom:5px;  
+ }
+.about_h1l img{
+width:100%; 
+ }
+.about_h1l2 {
+position:static!important;
+margin-top:15px; 
+ }
+.about_h1r{
+margin-top:15px;
+text-align:center;
+ }
+.about_h1r p{
+text-align:left;
+ }
+.about_h1r .fw-bold{
+text-align:left; 
+ }
+.about_h2{
+margin-top:20px; 
+ }
+.about_h2l h3{
+text-align:center; 
+ }
+.event_1li1 .button{
+display:block;
+width:80%;
+margin-left:auto;
+margin-right:auto;
+text-align:center;  
+ }
+.event_1r{
+margin-top:15px; 
+ }
+.course_1l p{
+text-align:left;  
+ }
+
+.prize_1l {
+padding:30px 15px;
+text-align:center; 
+ }
+.prize_1l p{
+text-align:left; 
+ }
+.prize_1lir{
+margin-top:15px; 
+ }
+
+ }
+
+@media (min-width:576px) and (max-width:767px) {
+
+
+ }
+@media (min-width:768px) and (max-width:991px) {
+.center_hm {
+padding-top:20px!important;
+padding-bottom:20px!important; 
+ }
+.spec_1i .font_60{ 
+font-size:30px; 
+ }
+.spec_1i h5{ 
+font-size:14px; 
+ }
+.learn_2i h6{
+font-size:12px;  
+ }
+.learn_2i .font_60{ 
+font-size:30px; 
+ }
+.about_h1l img{
+width:100%; 
+ }
+.course_1r .button{
+padding: 1rem 0.5rem;
+ }
+.prize_1l {
+padding:30px 15px;
+ }
+.prize_1lil span {
+width: 80px;
+height: 80px;
+line-height:80px;
+font-size:40px;
+}
+ }
+
+@media (min-width:992px) and (max-width:1200px) {
+.course_1r .button{
+padding: 1rem 1rem;
+ }
+.prize_1l {
+padding:30px 15px;
+ }
+ }
+@media (min-width:1201px) and (max-width:1330px) {
+
+ }
+ .testimonials {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.testimonial {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.testimonial h3 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.testimonial .highlight {
+  color: #f47920;
+  font-weight: bold;
+}
+
+.testimonial p {
+  font-size: 16px;
+  color: #666;
+  margin: 20px 0;
+  position: relative;
+}
+
+.testimonial .quote-icon {
+  font-size: 24px;
+  color: #f47920;
+}
+
+.testimonial .profile {
+  margin-top: 20px;
+}
+
+.testimonial .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial .profile h4 {
+  font-size: 18px;
+  color: #1a1a1a;
+  margin: 5px 0;
+}
+
+.testimonial .profile h5 {
+  font-size: 14px;
+  color: #666;
+}
+/* Chat Widget Styles */
+#chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+#chat-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #f2780e, #ff8800);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+#chat-box {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#chat-header {
+  background: linear-gradient(45deg, #0077ff, #00c6ff);
+  padding: 12px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#chat-messages {
+  height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#chat-messages div {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 8px 12px;
+  max-width: 75%;
+}
+
+.user-message {
+  background-color: #d9f7be;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #e6f7ff;
+  align-self: flex-start;
+  text-align: left;
+}
+
+#chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+#chat-send-button {
+  padding: 8px 14px;
+  margin-left: 6px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#chat-send-button:hover {
+  background: #005bb5;
+}
+
+
+
+
+
+

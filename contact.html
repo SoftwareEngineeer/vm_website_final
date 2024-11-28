@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vision Mentors</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/contact.css" rel="stylesheet">
+	<link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<style>
+		#footer .footer_m {
+			background-image: url('img/footer.png');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			color: #fff;
+			padding: 3rem 0;
+		}
+		.contact_1 .form-group {
+			margin-bottom: 1.5rem; /* Add spacing between form fields */
+		}
+		.contact_1r1 {
+			margin-bottom: 1.5rem; /* Add spacing between contact info sections */
+		}
+		.contact_2 iframe {
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body>
+	<section id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg_light p-0" id="navbar_sticky">
+			<div class="container-xl d-flex align-items-center">
+				<a class="col_brown" href="index.html">
+					<img src="img/logo.png" alt="Vision Mentors Logo" style="max-height: 90px; border: 1px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="course.html">Courses</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="team.html">Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="event.html">Calendar</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	<section id="center" class="center_contact">
+		<div class="center_om">
+			<div class="container-xl">
+				<div class="row center_o1 text-center">
+					<div class="col-md-12">
+						<h1 class="text-white">Contact Us</h1>
+						<h5 class="col_brown mb-0 fs-6"><a class="text-white" href="#">Home</a> <span class="mx-2 text-muted">/</span> Contact Us</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="p_3">
+		<div class="container-xl">
+			<div class="contact_1 row">
+				<div class="col-md-8">
+					<div class="contact_1l">
+						<h4 class="mb-3">Need Assistance? Please Complete The Contact Form</h4>
+						<form id="contact-form" onsubmit="sendEmail(event)">
+							<div class="form-group">
+								<label for="subject">Subject of Interest:</label>
+								<select class="form-control" id="subject" name="subject" required>
+									<option value="" disabled selected>Select a Subject</option>
+									<option value="Elementary">Elementary</option>
+									<option value="Secondary">Secondary</option>
+									<option value="High School">High School</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="from_name">Your Name:</label>
+								<input class="form-control" id="from_name" name="from_name" type="text" placeholder="Enter your name" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Your Email:</label>
+								<input class="form-control" id="email" name="reply_to" type="email" placeholder="Enter your email" required>
+							</div>
+							<div class="form-group">
+								<label for="phone">Phone Number:</label>
+								<input class="form-control" id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+							</div>
+							<div class="form-group">
+								<label for="message">Message:</label>
+								<textarea class="form-control" id="message" name="message" placeholder="Write your message" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_1r">
+						<div class="contact_1r1 bg_brown rounded-3 p-4">
+							<span class="text-white float-start lh-1 me-3 fs-1"><i class="fa fa-map-signs"></i></span>
+							<p class="font_14 text-light mb-0" style="text-align: justify;">
+								Shophouse A26, Sunshine City, Nam Thang Long Urban Area (Phase 2), Dong Ngac Ward, Bac Tu Liem District, Hanoi
+							</p>
+						</div>
+						<div class="contact_1r1 bg_light rounded-3 p-4 mt-4">
+							<span class="float-start lh-1 me-3 fs-1"><i class="fa fa-envelope"></i></span>
+							<p class="font_14 mb-0"><strong>info@visionmentorsvn.com</strong></p>
+						</div>
+						<div class="contact_1r1 bg_dark rounded-3 p-4 mt-4">
+							<span class="float-start text-white lh-1 me-3 fs-1"><i class="fa fa-headphones"></i></span>
+							<p class="font_14 text-light mb-0">+(84) 349 279 356</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contact_2 row mt-4">
+				<div class="col-md-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3723.5816257345444!2d105.769863!3d21.059673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab7fb1e02453%3A0x0!2s3QMR%2BPQV%20Vision%20Mentors%20Ciputra!5e0!3m2!1sen!2s!4v1698256967548" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer">
+		<div class="footer_m p_3">
+			<div class="container-xl">
+				<div class="footer_1 row">
+					<div class="col-md-4">
+						<div class="footer_1i">
+							<div class="top_1l">
+								<h4 class="mb-0">
+									<a class="col_brown" href="index.html">
+										<img src="img/footer_logo.png" alt="Vision Mentors Logo" style="max-height: 90px; position: relative; top: -5px; left: 30px;">
+									</a>
+								</h4>
+								<p class="text-light mt-4">Our mission is to nurture passions, transform them into skills, and equip students with the tools to exceed academic goals.<br>
+									Empowering Minds, Inspiring Excellence</p>
+								<h5 class="text-white">Follow Us</h5>
+								<ul class="social-network social-circle mb-0 mt-4">
+									<li><a href="https://www.facebook.com/visionmentorsvn" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-pinterest"></i></a></li>
+									<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="footer_1i">
+							<h4 class="col_brown mb-4">Category</h4>
+							<div class="row footer_1ism">
+								<h6 class="fw-normal col-md-12 col-6"><a class="text-light" href="#"> Economics</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Test Preparation</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> SAT/TOEFL/IELTS</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Computer Science</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> IB/AP/IGCSE</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-light" href="#"> Research Programs</a></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="footer_1i">
+							<h4 class="col_brown mb-4">Useful Link</h4>
+							<div class="row footer_1ism">
+								<h6 class="fw-normal col-md-12 col-6"><a class="text-light" href="#"> Home</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> About</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Course</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Our Policy</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6"><a class="text-light" href="#"> Pricing</a></h6>
+								<h6 class="fw-normal mt-2 col-md-12 col-6 mb-0"><a class="text-light" href="#"> Faq</a></h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer_1i">
+							<h4 class="col_brown mb-4">Contact Us</h4>
+							<h6 class="mt-4 text-light"><i class="fa fa-map-marker col_brown me-2 fs-4 align-middle"></i> Shophouse A26, Sunshine City, Nam Thang Long Urban Area (Phase 2), Dong Ngac Ward, Bac Tu Liem District, Hanoi</h6>
+							<h6 class="mt-4 text-light"><i class="fa fa-microphone col_brown me-2 fs-4 align-middle"></i> (+84) 349 279 356</h6>
+							<h6 class="mt-4 text-light mb-0"><i class="fa fa-headphones col_brown me-2 fs-4 align-middle"></i> info@visionmentorsvn.com</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer_b" class="bg_dark">
+		<div class="container-xl">
+			<div class="footer_b1 row text-center">
+				<div class="col-md-12">
+					<p class="mb-0 text-light">© 2024 Vision Mentors | All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+		var navbar_sticky = document.getElementById("navbar_sticky");
+		var sticky = navbar_sticky.offsetTop;
+		var navbar_height = document.querySelector('.navbar').offsetHeight;
+		function myFunction() {
+			if (window.pageYOffset >= sticky + navbar_height) {
+				navbar_sticky.classList.add("sticky")
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+				navbar_sticky.classList.remove("sticky");
+				document.body.style.paddingTop = '0'
+			}
+		}
+	</script>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script>
+		(function () {
+			emailjs.init("jqbYgjx9gsVv48OrU"); // Replace YOUR_USER_ID with your actual EmailJS User ID
+		})();
+
+		function sendEmail(event) {
+			event.preventDefault(); // Prevent default form submission behavior
+			// Send form data using EmailJS
+			emailjs.sendForm("service_l2xtopj", "template_dmzcplf", "#contact-form")
+				.then(
+					function () {
+						alert("Message sent successfully!");
+					},
+					function (error) {
+						alert("Failed to send the message. Please try again.");
+						console.error("Error:", error);
+					}
+				);
+		}
+	</script>
+</body>
+</html>
